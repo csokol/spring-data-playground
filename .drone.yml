@@ -1,0 +1,10 @@
+---
+kind: pipeline
+type: kubernetes
+name: default
+
+steps:
+  - name: service
+    image: openjdk:14
+    commands:
+      - ./gradlew build
