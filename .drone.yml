@@ -8,3 +8,6 @@ steps:
     image: openjdk:14
     commands:
       - ./gradlew build
+    when:
+      branch:
+        - master
